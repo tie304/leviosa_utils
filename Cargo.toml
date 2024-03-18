@@ -1,0 +1,10 @@
+[package]
+name = "leviosa_utils"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0.197"
+sqlx = { version = "0.7.3", features = [ "runtime-tokio", "tls-native-tls", "postgres", "time", "chrono", "bigdecimal", "uuid" ] }
